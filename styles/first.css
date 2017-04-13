@@ -1,0 +1,53 @@
+body {
+	background-color: ivory;
+	color: #333300;
+	font-size: 1.5em;
+	font-family: "Calibri", sans-serif;
+	text-align: center;
+}
+
+@keyframes fly {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:000px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.strange-flying-thing {
+	width: 4em;
+	height: 4em;
+	position: relative;
+    background-color: red;
+    animation-name: fly;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.field {
+	width: 12.33em;
+	height: 12.33em;
+	left: 21.8em;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
+	border-radius: 4px;
+}
+
+i {
+	color: #808080;
+}
+i.fa-facebook-official:hover {
+	color: #000080;
+}
+i.fa-github:hover {
+	color: #000000;
+}
+i.fa-skype:hover {
+	color: #33adff;
+}
+i.fa-envelope-square:hover {
+	color: #ff0000;
+}
