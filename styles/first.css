@@ -17,7 +17,7 @@ body {
 .strange-flying-thing {
 	width: 4em;
 	height: 4em;
-	position: relative;
+	position: absolute;
     background-color: red;
     animation-name: fly;
     animation-duration: 4s;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/third.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header><h1>Hello and Welcome again-again!</h1></header>
+  
+  <section>
+    <!--the 1st task:
+    Напишите функцию range(), принимающую два аргумента, начало и конец диапазона, и возвращающую массив, который содержит все числа из диапазона, включая начальное и конечное. Третий необязательный аргумент функции range() – шаг для построения массива. Убедитесь, что функция range() работает с отрицательным шагом: например, вызов range(5, 2, -1) возвращает [5, 4, 3, 2].
+    -->
+    <b>Task 1 - create an array of numbers from range</b><br>
+    Begin:
+    <input type="number" id="begin" value = "5" required/>
+    End:
+    <input type="number" id="end" value = "2" required/>
+    Step (optional):
+    <input type="number" id="step" placeholder="e.g. -1"/>
+    <button onclick="range(document.getElementById('begin').value,document.getElementById('end').value,document.getElementById('step').value)">Go</button>
+    <p id="demo1"></p>
+    <script src="jscripts/third1.js"></script>
+
+    <!--the 2nd task:
+    Самостоятельно реализуйте любой алгоритм сортировки массива. Желательно, чтобы ваша функция сортировки могла принимать компаратор для сравнения элементов (как это делает стандартный метод sort()).
+    -->
+    <b>Task 2 - Sort an array:</b><br>
+    <p title="Before sorting" id="array"></p>
+    <button onclick="ssort()">Sort</button>
+    <p title="After sorting" id="sorted"></p>
+    <script src="jscripts/third2.js"></script>
+    
+    <!--the 3rd task
+      Создать функцию createMatrix(), принимающую количество строк и количество столбцов матрицы и возвращающее матрицу (массив массивов), заполненную случайными числами в диапазоне от 0 до 100. Написать функцию, выполняющую суммирование двух таких «матриц».
+    -->
+    <b>Task 3 - Create a matrix with random numbers from 1 to 100 and sum it with a similar one:</b><br>
+    Rows:
+    <input type="number" id="rows" value = "3" required/>
+    Columns:
+    <input type="number" id="cols" value = "3" required/>
+    <button onclick="createMatrix(document.getElementById('rows').value, document.getElementById('cols').value)">Create</button>
+    <p id="matrix"></p>
+    <button id="summ" onclick="summ()" disabled="true">Sum</button>
+    <p id="sumresult"></p>
+    <script src="jscripts/third3.js"></script>
+  </section>
+
+  <footer>
+    <p>You can contact me at<br>
+    <a href="https://www.facebook.com/profile.php?id=100010679711235" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://github.com/april314"><i class="fa fa-github" target="_blank"></i></a>
+    <a href="skype:april_pie1?userinfo"><i class="fa fa-skype"></i></a>
+    <a href="mailto:nasturtiumk@yandex.com?Subject=Hello%20again" target="_blank"><i class="fa fa-envelope-square"></i></a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fourth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/fourth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header><h1>Hello and Welcome to some OOP.</h1></header>
+  
+  <section>
+    <!--the 1st task:
+    Создайте класс Vector для представления вектора в трехмерном пространстве (свойства для координат x, y, z). Добавьте в прототип Vector два метода plus() и scalar() для вычисления суммы двух векторов и скалярного произведения двух векторов. Добавьте в прототип свойство только для чтения length, подсчитывающее длину вектора. Переопределите в классе Vector методы toString() и valueOf(). Протестируйте созданный класс.
+    -->
+    <b>Task 1</b> - class Vector<br>
+    Vector 1<br>
+    x1: <input type="number" id="x1" value="1" required/>
+    y1: <input type="number" id="y1" value="2" required/>
+    z1: <input type="number" id="z1" value="3" required/><br>
+    Vector 2<br>
+    x2: <input type="number" id="x2" value="3" required/>
+    y2: <input type="number" id="y2" value="2" required/>
+    z2: <input type="number" id="z2" value="1" required/><br><br>
+    <button onclick="doEverything()">Go</button>
+    <p id="vector1"></p>
+    <p id="vector2"></p>
+    <p id="vector3"></p>
+    <hr>
+    <script src="jscripts/fourth1.js"></script>
+
+    <!--the 2nd task:
+    Задача имеет название, описание, дату начала и дату окончания. Любая задача может иметь набор дочерних подзадач. Создайте класс для представления задачи.
+    Выполняемая задача – наследник задачи с дополнительным свойствами: процент выполнения (число) и флагом задача завершена. Реализуйте данное наследование.
+    -->
+    <b>Task 2</b> - Inheritance<br>
+    <button onclick="inheritance()">Inherit!</button>
+    <p id="inher1"></p>
+    <p id="inher2"></p>
+    <script src="jscripts/fourth2.js"></script>
+    
+  </section>
+
+  <footer>
+    You can contact me at<br>
+    <a href="https://www.facebook.com/profile.php?id=100010679711235" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://github.com/april314"><i class="fa fa-github" target="_blank"></i></a>
+    <a href="skype:april_pie1?userinfo"><i class="fa fa-skype"></i></a>
+    <a href="mailto:nasturtiumk@yandex.com?Subject=Hello%20again" target="_blank"><i class="fa fa-envelope-square"></i></a>
+  </footer>
+
+</body>
+</html>
